@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WEB700</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Student Name</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+					<li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+					<li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<main class="col-md-12">
+
+					  <section>
+						<header>
+						  <h2>Tables</h2>
+						</header>
+						<table>
+						  <caption>Table 1</caption>
+						  <thead>
+							<tr>
+							  <th>Header 1</th>
+							  <th>Header 2</th>
+							  <th>Header 3</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <td>Row 1, Column 1</td>
+							  <td>Row 1, Column 2</td>
+							  <td rowspan="2">Row 1 and 2, Column 3</td>
+							</tr>
+							<tr>
+							  <td>Row 2, Column 1</td>
+							  <td>Row 2, Column 2</td>
+							</tr>
+							<tr>
+							  <td colspan="3">Row 3, Column 1 to 3</td>
+							</tr>
+						  </tbody>
+						  <tfoot>
+							<tr>
+							  <td>Footer 1</td>
+							  <td>Footer 2</td>
+							  <td>Footer 3</td>
+							</tr>
+						  </tfoot>
+						</table>
+				  
+						<table>
+						  <caption>Table 2</caption>
+						  <thead>
+							<tr>
+							  <th>Column 1</th>
+							  <th>Column 2</th>
+							  <th>Column 3</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <td>Row 1, Column 1</td>
+							  <td>Row 1, Column 2</td>
+							  <td>Row 1, Column 3</td>
+							</tr>
+							<tr>
+							  <td>Row 2, Column 1</td>
+							  <td>Row 2, Column 2</td>
+							  <td>Row 2, Column 3</td>
+							</tr>
+							<tr>
+							  <td>Row 3, Column 1</td>
+							  <td>Row 3, Column 2</td>
+							  <td>Row 3, Column 3</td>
+							</tr>
+						  </tbody>
+						</table>
+				  
+						<p>These two tables demonstrate the use of various HTML table elements and properties, such as the caption, thead, tbody, tfoot, th, td, tr, rowspan, and colspan. The tables can be used to organize and present data in a clear and structured manner on web pages.</p>
+					  </section>
+
+					  <section>
+						<h2>List Section</h2>
+						<ul>
+						  <li>Item 1</li>
+						  <li>Item 2</li>
+						  <li>Item 3
+							<ul>
+							  <li>Sub-item 1</li>
+							  <li>Sub-item 2</li>
+							  <li>Sub-item 3</li>
+							</ul>
+						  </li>
+						  <li>Item 4</li>
+						  <li>Item 5</li>
+						</ul>
+						<p>This section contains a single unordered list with a total of 5 items. One of the items, Item 3, includes an unordered list as a child with 3 sub-items. Each list item can contain any type of content, such as text, images, and links.</p>
+					  </section>
+
+					  <section>
+						<h2>Image Gallery</h2>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder_in_halfpipe">
+						<p></p>
+						<img src="https://commons.wikimedia.org/wiki/Category:Images#/media/File:EGO_2022.jpg" alt="Dude Standing">
+						<p></p>
+						<img src="https://commons.wikimedia.org/wiki/Commons:Photo_challenge#Challenges_open_for_submission" alt="Guy Hanging in Train">
+						<p>This section contains a gallery of three images with alternative text describing the content of the images.</p>
+					  </section>
+					  
+
+					  <section>
+						<h2>Audio Player</h2>
+						<audio controls>
+							<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3" type="audio/mp3">
+							<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.ogg " type="audio/ogg">
+							<p>Sorry, your browser doesn't support HTML5 audio. Here is a <a href="song.mp3">link to the audio</a> instead</p>.
+						</audio>
+						<p>This section contains an HTML 5 audio player with a sample audio file. Click on the play button to listen to the audio. </p>
+					  </section>
+
+					  <section>
+						<h2>Video Player</h2>
+						<video controls>
+						  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.mp4" type="video/mp4">
+						  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.ogg" type="video/ogg">
+						  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.webm" type="video/webm">
+						  Your browser does not support the video tag.
+						</video>
+						<p>This section contains an HTML 5 video player. You can use the controls to play, pause, and adjust the volume of the video. If your browser does not support the video format, the "Your browser does not support the video tag." message will be displayed.</p>
+					  </section>
+
+
+
+				</main>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
